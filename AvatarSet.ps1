@@ -4,12 +4,12 @@ $user_api_url = "https://backend.staffbase.com/api/users/"
 $auth_token    = "NjE3MmVmMGMwNzFhMGExOWYzMDhlOGE5OnhBcGZUNi0kXnp9dSRkfilRaFBLazFrW0laRWwhLmY2JDhSekI3JiQhNUN9a0N4Y3RbXXpxe2o0TEduWWxqRnk="
 $Headers      = @{ 'Authorization' = "Basic $auth_token" }
 
-$avatar_path   = "C:\Coding\StaffBase\Assessment\Avatars\"
+$avatar_path   = "$PSScriptRoot\Avatars\"
 
 
 $avatars_to_path = (Get-ChildItem $avatar_path -Recurse).fullname
 
-
+# Please use Powershell 7.1
 foreach ($file in $avatars_to_path){
 
 $file_to_id = (Get-ChildItem $file -Recurse).BaseName
