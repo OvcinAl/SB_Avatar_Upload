@@ -1,7 +1,7 @@
 
 $user_api_url = "https://backend.staffbase.com/api/users/"
 
-$auth_token    = "NjE3MmVmMGMwNzFhMGExOWYzMDhlOGE5OnhBcGZUNi0kXnp9dSRkfilRaFBLazFrW0laRWwhLmY2JDhSekI3JiQhNUN9a0N4Y3RbXXpxe2o0TEduWWxqRnk="
+$auth_token    = "xxxxxxxxx"
 $Headers      = @{ 'Authorization' = "Basic $auth_token" }
 
 $avatar_path   = "$PSScriptRoot\Avatars\"
